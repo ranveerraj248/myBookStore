@@ -7,3 +7,5 @@ deploy:
   api_key:
     secure: $HEROKU_TOKEN
   app: "my-spring-book-store"
+  on:
+    all_branches: true
