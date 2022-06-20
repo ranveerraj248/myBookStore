@@ -22,7 +22,7 @@ public class BookControllerTest {
     @Autowired
     private TestRestTemplate testRestTemplate;
 
-    @Test
+//    @Test
     @Sql(scripts = {"classpath:InsertInitialBookRecordForTest.sql"})
     void shouldReturnBooksWhenBookApiCalled(){
         BookDto[] listOfBooks = testRestTemplate.getForObject("http://localhost:" + port + "/api/v1/books", BookDto[].class);
