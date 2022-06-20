@@ -6,8 +6,8 @@ spring:
     platform: postgres
     hikari:
       connection-test-query: SELECT 1
-      initialization-mode: always
   jpa:
+    database-platform: com.store.book.MyH2Dialect
     database: POSTGRESQL
     show-sql: true
     generate-ddl: true
