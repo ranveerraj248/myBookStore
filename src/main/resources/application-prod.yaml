@@ -6,8 +6,6 @@ spring:
     platform: postgres
     hikari:
       connection-test-query: SELECT 1
-    initialization:
-      mode: never
   jpa:
     database: POSTGRESQL
     show-sql: true

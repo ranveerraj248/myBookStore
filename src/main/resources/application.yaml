@@ -6,8 +6,6 @@ spring:
         platform: h2
         hikari:
             connection-test-query: SELECT 1
-        initialization:
-            mode: never
     jpa:
         database: H2
         show-sql: true
